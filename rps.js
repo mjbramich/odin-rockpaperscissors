@@ -1,19 +1,21 @@
-const random = 
-  Math.floor(Math.random()*3) + 1;
+const choices = ['Rock', 'Paper', 'Scissors'];
 
 
+// random choice selector
+const getComputerChoice = function() {
+ return choices[Math.floor(Math.random()*choices.length)]
+};
 
+const computerSelection = getComputerChoice();
+const playerSelection = 'Rock';
 
-const getComputerChoice = 
-  if(random === 1); {
-    console.log('Rock');
-  }elseIf ( random === 2); {
-    console.log('Scissors')
-  }elseIf ( random === 3 ); {
-    console.log ('Paper')
+const playRound = function(playerSelection, computerSelection) {
+  if ((playerSelection === 'Rock' && computerSelection === 'Scissors') ||   (playerSelection === 'Scissors' && computerSelection === 'Paper') || (playerSelection === 'Paper' && computerSelection === 'Rock')) {
+      return console.log('You win, great job');
+}  else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
+  (playerSelection === 'Scissor' && computerSelection === 'Rock') ||
+  (playerSelection === 'Paper' && computerSelection === 'Scissors')); {
+    return console.log ('You lose, better luck next time..')
   }
-  
+}
 
-
-
-console.log(getComputerChoice)
