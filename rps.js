@@ -7,7 +7,7 @@ const getComputerChoice = function() {
 };
 
 const computerSelection = getComputerChoice();
-const player= 'ROck';
+const player= 'SCISSORS';
 const playerSelection = player.toLowerCase();
 
 // play round function
@@ -18,7 +18,7 @@ const playRound = function(playerSelection, computerSelection) {
       (playerSelection === 'paper' && computerSelection === 'rock')) {
       console.log('You win, great job');
 }   else if ((playerSelection === 'rock' && computerSelection === 'paper') ||
-    (playerSelection === 'scissor' && computerSelection === 'rock') ||
+    (playerSelection === 'scissors' && computerSelection === 'rock') ||
     (playerSelection === 'paper' && computerSelection === 'scissors')) {
       console.log ('You lose, better luck next time..');
 }   else if  (playerSelection === computerSelection) {
