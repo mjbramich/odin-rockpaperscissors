@@ -12,16 +12,21 @@ const playerSelection = 'Rock';
 // play round function
 
 const playRound = function(playerSelection, computerSelection) {
-  if ((playerSelection === 'Rock' && computerSelection === 'Scissors') ||   (playerSelection === 'Scissors' && computerSelection === 'Paper') || (playerSelection === 'Paper' && computerSelection === 'Rock')) {
+  if ((playerSelection === 'Rock' && computerSelection === 'Scissors') ||   
+      (playerSelection === 'Scissors' && computerSelection === 'Paper') || 
+      (playerSelection === 'Paper' && computerSelection === 'Rock')) {
       console.log('You win, great job');
-}  else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
-  (playerSelection === 'Scissor' && computerSelection === 'Rock') ||
-  (playerSelection === 'Paper' && computerSelection === 'Scissors')); {
+}   else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
+    (playerSelection === 'Scissor' && computerSelection === 'Rock') ||
+    (playerSelection === 'Paper' && computerSelection === 'Scissors')) {
       console.log ('You lose, better luck next time..');
-} else if  (playerSelection && computerSelection); {
+}   else if  (playerSelection === computerSelection) {
     console.log ('It\'s a draw!');
-  } 
+} 
 
 }
+
+playRound();
+
 
 
