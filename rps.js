@@ -9,13 +9,13 @@ function getComputerChoice() {
 const computerSelection = getComputerChoice();
 let playerSelection = getPlayerChoice();
 
-
+//Player choice
 function getPlayerChoice() {
   let playerChoice = prompt('Enter Selection:').toLowerCase();
     return playerChoice;
 }
 
-
+//Scoring
 let playerScore = 0;
 let computerScore = 0;
 let score = `${playerScore} - ${computerScore}`;
@@ -26,31 +26,34 @@ let score = `${playerScore} - ${computerScore}`;
 const playRound = function(playerSelection, computerSelection) { 
   
   // win condition
-  if((playerSelection === 'rock' && computerSelection === 'scissors') ||
-      (playerSelection === 'scissors' && computerSelection === 'paper') || 
+  if((playerSelection === 'rock' && computerSelection === 'scissors') 
+      ||
+      (playerSelection === 'scissors' && computerSelection === 'paper') 
+      || 
       (playerSelection === 'paper' && computerSelection === 'rock')) {
       console.log(`You win! ${playerSelection} beats ${computerSelection}`);
       playerScore++;
       score = `${playerScore} - ${computerScore}`;
 
   // lose condition
-}     else if ((playerSelection === 'rock' && computerSelection === 'paper') ||
-      (playerSelection === 'scissors' && computerSelection === 'rock') ||
+  } else if ((playerSelection === 'rock' && computerSelection === 'paper') 
+      ||
+      (playerSelection === 'scissors' && computerSelection === 'rock') 
+      ||
       (playerSelection === 'paper' && computerSelection === 'scissors')) {
       console.log(`You lose! ${computerSelection} beats ${playerSelection}`)
       computerScore++;
       score = `${playerScore} - ${computerScore}`;
 
   // draw condition
-}     else if  (playerSelection === computerSelection) {
+  } else if  (playerSelection === computerSelection) {
       console.log('It\'s a draw!');
-} 
+  } 
     return score ;
 };
-// playRound(playerSelection,computerSelection);
-// console.log(score);
 
-// game function
+
+// game function to play 5 rounds
 
 
 function game() {
