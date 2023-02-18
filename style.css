@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+
+body {
+    background: rgb(51, 50, 50);
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+
+.result h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.result .icons {
+    display: flex;
+    gap: 5rem;
+}
+
+.left,.right{
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+.score h2{
+    font-size: 2.5rem;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.winner{
+    text-transform: uppercase;
+    font-size: 80px;
+    text-shadow:  0 0.5rem 0.25rem rgb(219, 39, 99);
+}
+
+button {
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0.2rem;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 0 0.5rem 0.25rem rgb(192, 253, 251) ;
+    cursor: pointer;
+    transition: box-shadow 1ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 0.5px rgb(192, 253, 251);
+    transform: translateY(-1px);
+}
+
+img {
+    max-width: 100%;
+    width: 20%;
+}
+
+/* Adjusted for mobile devices*/
+
+@media (max-width: 400px) {
+    .winner{
+        font-size: 40px;
+    }
+    img{
+        max-width: 100%;
+        width: 30%;
+    }
+}

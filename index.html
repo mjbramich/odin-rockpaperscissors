@@ -4,12 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Rock, Paper, Scissors</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 
-    <script src="rps.js">
-      
-    </script>
+    <div class="container">
+     
+      <div class="result">
+        <h1>You think you can win?</h1>
+        <div class="icons">
+
+          <div class="left">
+            <img class="rock-img hidden" src="images/rock.svg" alt="">
+            <img class="paper-img hidden" src="images/paper.svg" alt="">
+            <img class="scissors-img hidden" src="images/scissors.svg" alt="">
+          </div>
+
+          <div class="right">
+            <img class="rock-img hidden" src="images/rock.svg" alt="">
+            <img class="paper-img hidden" src="images/paper.svg" alt="">
+            <img class="scissors-img hidden" src="images/scissors.svg" alt="">
+          </div>
+        </div>
+
+        <div class="score">
+          <h2>0 : 0</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <button class="rock">rock</button>
+        <button class="paper">paper</button>
+        <button class="scissors">scissors</button>
+        <button class="restart">restart</button>
+      </div>
+
+        
+    </div>
+
+  <script src="rps.js"> </script>
   </body>
 </html>
