@@ -3,7 +3,6 @@ Rock Paper Scissors game that is played against the computer. The aim of the Roc
 
 **Link to project:** https://mjbramich.github.io/odin-rockpaperscissors/
 
-![alt tag](http://placecorgi.com/1200/650)
 
 ## How It's Made:
 
