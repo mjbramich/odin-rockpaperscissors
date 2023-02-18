@@ -60,7 +60,7 @@ body {
 .game {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 
 }
 
@@ -91,7 +91,7 @@ button:hover {
 
 img {
     max-width: 100%;
-    width: 20%;
+    width: 50%;
 }
 
 /* Adjusted for mobile devices*/
