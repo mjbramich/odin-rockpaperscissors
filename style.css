@@ -96,7 +96,7 @@ img {
 
 /* Adjusted for mobile devices*/
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .winner{
         font-size: 30px;
     }
